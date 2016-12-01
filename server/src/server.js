@@ -11,8 +11,6 @@ app.listen(3000, function () {
 console.log('Example app listening on port 3000!');
 });
 
-var util = require('./util');
-var reverseString = util.reverseString;
 var bodyParser = require('body-parser');
 app.use(bodyParser.text());
 
@@ -87,3 +85,5 @@ res.send(getFeedData(userid));
 res.status(401).end();
 }
 });
+
+
